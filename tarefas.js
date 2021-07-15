@@ -49,7 +49,7 @@ tarefas.forEach(insereTarefaNaPagina)
 
 /* -- EXERCICIO 2 -- */
 
-document.querySelector('#incluir-nova-tarefa').addEventListener('click', (e) => {
+document.querySelector('#incluir-nova-tarefa').addEventListener('click', e => {
     let novaTarefa = { realizada: false }
     const tarefaNomeEl = document.querySelector('#nova-tarefa-nome')
     const tarefaCategoriaEl = document.querySelector('#nova-tarefa-categoria')
@@ -99,9 +99,11 @@ document.querySelector('#nova-tarefa-nome').addEventListener('keyup', e => {
     
         insereTarefaNaPagina(novaTarefa)
     
+        /* -- Limpa os campos. -- */
         e.target.value = ''
         categoriaEl.value = 'lazer'
-    
+
+        /* -- Devolve o foco. --*/
         e.target.focus()
     }
 })
