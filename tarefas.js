@@ -42,13 +42,12 @@ const insereTarefaNaPagina = tarefa => {
 
     listaTarefasEl.appendChild(userEventsEl)
 
-    //ANTES DO EXERCICIO 1 - listaTarefasEl.innerHTML += template 
+    // ANTES DO EXERCICIO 5 - listaTarefasEl.innerHTML += template 
 }
 
 tarefas.forEach(insereTarefaNaPagina)
 
 /* -- EXERCICIO 2 -- */
-
 document.querySelector('#incluir-nova-tarefa').addEventListener('click', e => {
     let novaTarefa = { realizada: false }
     const tarefaNomeEl = document.querySelector('#nova-tarefa-nome')
